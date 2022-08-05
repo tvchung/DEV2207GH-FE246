@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML5</title>
+    <style>
+        form{
+            margin:1rem;
+            padding:1rem;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form in HTML5</h1>
+    <hr>
+    <pre>
+        - input: 
+            type: 
+                + text 
+                + password
+                + checkbox 
+                + radio
+                + number
+                + range
+                + color 
+                + Date / datetime-local / ... 
+                + email 
+                + tel 
+                + url 
+                + search 
+                ..... 
+        - select: 
+        - button: 
+    </pre>
+    <form action="">
+        <p>
+            Kiểu text: 
+            <input type="text" id="txt" name="txt" 
+                placeholder="Nhập họ tên"
+                value="Devmaster"
+                required>
+        </p>
+        <p>
+            Mật khẩu: 
+            <input type="password" name="mk" id="mk">
+        </p>
+        <p>
+            Email: 
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            Điện thoại: 
+            <input type="tel" name="dt" id="dt">
+        </p>
+        <p>
+            Giới tính:
+            <input type="radio" name="gt" id="gtNam" checked
+                value="Nam"> 
+            <label for="gtNam">Nam</label>
+            <input type="radio" name="gt" id="gtNu" value="Nữ"> 
+            <label for="gtNu">Nữ</label>
+            <input type="radio" name="gt" id="gtKhac" value="Khác"> 
+            <label for="gtKhac">Khác</label>
+        </p>
+        <p>
+            Sở thích: 
+            <input type="checkbox" name="ck" id="ck1" checked>
+            <label for="ck1">Bóng đá</label>
+            <input type="checkbox" name="ck" id="ck2" >
+            <label for="ck2">Bóng chuyền</label>
+            <input type="checkbox" name="ck" id="ck3" >
+            <label for="ck3">Xem phim</label>
+        </p>
+        <p>
+            Ngày sinh:
+            <input type="date" name="ngaySinh" id="ngaySinh">
+        </p>
+        <p>
+            Chọn màu:
+            <input type="color" name="mau"  id="mau" value="blue" >
+        </p>
+        <p>
+            Tuổi:
+            <input type="number" name="tuoi" id="tuoi" value="40">
+        </p>
+        <p>
+            range:
+            <input type="range" name="range" id="range" min="0"
+            max="10" value="8">
+        </p>
+        <p>
+            Chọn ảnh: 
+            <input type="file" name="chonAnh" id="chonAnh">
+        </p>
+        <p>
+            Tỉnh thành:
+            <select name="tinhThanh" id="tinhThanh">
+                <option value="HN">Hà nội</option>
+                <option value="HCM">Tp. Hồ chính mính</option>
+                <option value="DN">Đà nẵng</option>
+                <option value="HP">Hải phòng</option>
+            </select>
+        </p>
+        <p>
+            Địa chỉ:
+            <textarea name="" id=""   rows="3" style="width:100%"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Gửi" name="btnGui">
+            <input type="reset" value="Làm lại">
+        </p>
+    </form>
+</body>
+</html>

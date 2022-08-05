@@ -1,0 +1,8 @@
+1. thực hành lại với 2 loại responsive
+2. một số tính năng css3:
+    - transition
+    - transform
+    - animation
+    - rotate
+    - scale
+    ....

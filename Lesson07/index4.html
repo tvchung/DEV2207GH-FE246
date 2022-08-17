@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu danh mục sản phẩm</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        nav{
+            margin: 2rem;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul img{
+            width:22px
+        }
+       
+        .button span{
+            width: 22px;
+            height: 2px;
+            background-color: #da251c;
+            display: block;
+            margin:.35rem 0 ;
+        }
+        .head {
+            display: flex;
+            align-items: center;
+        }
+        .head h5{
+            margin-left: .25rem;
+        }
+        nav ul li {
+            display: flex;
+            align-items: center;
+            padding: .25rem 0;
+            position: relative;
+        }
+        nav ul li img{
+            margin-right: .25rem;
+        }
+        nav a{
+            text-decoration: none;
+            color:#000
+        }
+        nav ul li:hover{
+            background-color: #da251c;
+        }
+        nav ul li:hover a{
+            color:#fff;
+        }
+        
+        nav ul li:hover img{
+            filter: brightness(0) invert(1) ;
+        }
+        nav ul li::after{
+            content: "";
+            width: 100%;
+            border-bottom: 5px solid green;
+            position: absolute;
+            top: 100%;
+            display: none;
+        }
+        nav ul li:hover::after{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="head">
+            <div class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h5>Danh mục sản phẩm</h5>
+        </div>
+        <ul>
+            <li>
+                <img src="icon/382.png" alt="Đồ gia dụng">
+                <a href="#">Đồ gia dụng</a>
+            </li>
+            <li>
+                <img src="icon/1013.png" alt="Điện máy - Điện lạnh">
+                <a href="#">Điện máy - Điện lạnh</a>
+            </li>
+            <li>
+                <img src="icon/680.png" alt="Công cụ - Dụng cụ">
+                <a href="#">Công cụ - Dụng cụ</a>
+            </li>
+            <li>
+                <img src="icon/290.png" alt="Y tế & Sức khỏe">
+                <a href="#">Y tế & Sức khỏe</a>
+            </li>
+            <li>
+                <img src="icon/263.png" alt="Thể thao ngoài trời">
+                <a href="#">Thể thao ngoài trời</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

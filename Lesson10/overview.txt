@@ -1,0 +1,31 @@
+Ngôn ngữ lập trình - javascript
+1.  Javascript 
+    - cú pháp
+    - môi trường thực thi 
+
+2. Biến, hằng, kiểu dữ liệu, toán tử, biểu thức, câu lệnh, khối lệnh, ....
+3. Nhập / xuất 
+4. Các cấu trúc điều khiển: (3 loại cấu trúc điều khiển)
+    a) Lựa chọn / rẽ nhánh 
+        *) if => 4 dạng if 
+
+
+        *) switch
+
+    b) Cấu trúc lặp 
+        *) for: 4 dạng for 
+
+        *) while 
+
+        *) do...while 
+
+        *) forEach 
+
+    c) Lệnh nhảy 
+        *) break ; continue; return; ...
+5. Hàm 
+6. Mảng / chuỗi 
+
+-----ES6
+7. Object
+8. class 

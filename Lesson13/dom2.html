@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event</title>
+</head>
+<body>
+    <h1 onmouseover="domOnMouseOver();">DOM EVENT TEST</h1>
+    <hr/>
+    <button onclick="domClick();">Click Here</button>
+
+    <script>
+        var domClick = ()=>{
+            document.getElementsByTagName("h1")[0].innerText = "Welcome to, Dom Javascript";
+        }
+
+        var domOnMouseOver = ()=>{
+            let element = document.getElementsByTagName("h1")[0];
+
+            alert(element.innerText);
+        }
+    </script>
+</body>
+</html>

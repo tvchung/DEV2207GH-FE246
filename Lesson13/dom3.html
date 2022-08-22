@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event  + DOM CSS </title>
+</head>
+<body>
+    <h1>DOM Event  + DOM CSS</h1>
+    <hr/>
+    <input type="text" name="noiDung" id="noiDung" value=""
+        onchange="setValue(this.value);" onkeydown="setKeyDown(this);" onkeyup="setKeyUp(this);">
+    <button onclick="mau();">Click</button>
+    <hr/>
+    <div class="txt">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam doloribus quia fugit repudiandae tempore quaerat iste, accusamus excepturi ea aliquid optio amet nemo accusantium impedit molestias repellendus suscipit alias distinctio.
+    </div>
+    <div class="keyTxt" style="background-color: red;">
+        key text:
+    </div>
+    <div class="keyTxt" style="background-color: blue;">
+        key text:
+    </div>
+    <script>
+        // event+css
+        var mau=()=>{
+            let element = document.getElementsByTagName("h1")[0];
+
+            element.style.color='RED';
+
+            element = document.getElementsByClassName("txt")[0];
+            element.style.backgroundColor='green';
+        }
+
+        var setValue=(val)=>{
+            // hiển thị giá trị và txt 
+            document.getElementsByClassName("txt")[0].innerText = val;
+        }
+
+        var setKeyDown = (obj)=>{
+            console.log(obj);
+            document.getElementsByClassName("keyTxt")[0].innerText = obj.value;
+        }
+        var setKeyUp = (obj)=>{
+            document.getElementsByClassName("keyTxt")[1].innerText = obj.value;
+            console.log(obj.value);
+            console.log(obj.value==27);
+            if(obj.value==27){
+                document.getElementsByClassName("keyTxt")[1].innerText += "ESC";
+            }
+        }
+        
+    </script>
+</body>
+</html>

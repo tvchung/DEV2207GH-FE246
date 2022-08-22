@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm việc với DOM javascript</title>
+</head>
+<body>
+    <h1>Làm việc với DOM javascript</h1>
+    <hr>
+    <pre>
+        *) Tương với các phần tử html thông qua DOM:
+        - id: getElementById / tên của thuộc tính id 
+        - tag: getElementsByTagName
+        - class: getElementsByClassName
+        - css selector: querySelectorAll
+        - Example:
+    </pre>
+
+    <div>
+        <label for="noiDung">Nhập nội dung:</label>
+        <input type="text" name="noiDung" id="noiDung" value="Devmaster Academy">
+    </div>
+    <div>
+        <input type="button" value="Click Here (ID)" onclick="getByID();">
+        <input type="button" value="Click Here (class)" onclick="getByClass();">
+        <input type="button" value="Click Here (Tag)" onclick="getByTagName();">
+        <input type="button" value="Click Here (css-selector)" onclick="getByCssSelector();">
+        <input type="button" value="Click Here (css-selector1)" onclick="getByCssSelector1();">
+    </div>
+    <div class="result" id="res">
+        <div id="kq">Kết quả(ID):</div>
+        <div id="kqua"></div>
+        <div class="ket-qua">Kết quả (class):</div>
+        <div>
+            <p>Kết quả[tag]:</p>
+        </div>
+        <div class="ket-qua">Kết quả (class):</div>
+        <div class="ket-qua">Kết quả (class):</div>
+        <div class="ket-qua">Kết quả (class):</div>
+
+        <div class="css-selector">
+            css-selector:
+        </div>
+        <div class="css-selector">
+            css-selector 1:
+        </div>
+    </div>
+
+    <script>
+        // tương tác thông qua id của phần tử
+        var getByID = ()=>{
+            // lấy giá trị nhập trên input
+            let nd = document.getElementById("noiDung").value;
+            // gán kết quả:
+
+            // - gán thông qua id của phần tử
+            document.getElementById("kq").innerText += nd;
+            document.getElementById("kq").innerHTML += "<h2>"+nd+"</h2>";
+
+            // tên id của thể
+            kqua.innerHTML = "<h3>"+nd+"</h3>";
+        }
+
+        // Tương tác thông qua thuộc tính class
+        var getByClass = ()=>{
+            // lấy giá trị
+            let nd = document.getElementById("noiDung").value;
+            // hiển thị thông qua class 
+            document.getElementsByClassName("ket-qua")[0].innerText +=nd;
+
+            // gán giá trị cho tất cả các phần tử có thuộc tính class = ket-qua
+            let elems = document.getElementsByClassName("ket-qua");
+            for (let i = 0; i < elems.length; i++) {
+                elems[i].innerHTML ="<h2>" + nd + "</h2>";
+            }
+        }
+
+        // Tương tác thông qua tên thể
+        var getByTagName = ()=>{
+            // lấy giá trị
+            let nd = document.getElementsByTagName("input")[0].value;
+            // hiển thị giá trị thông qua tag name
+            document.getElementsByTagName("p")[0].innerText +=nd;
+        }
+
+        // Tương tác thông qua css selector
+        var getByCssSelector = ()=>{
+            // lấy giá trị
+            let nd = noiDung.value;
+
+            // Hiển thị nội dung lên phần tử html thông qua css selector
+
+            document.querySelectorAll(".result div.css-selector")[0].innerHTML="<h1>"+nd+"</h1>";
+            document.querySelectorAll("#res div.css-selector")[1].innerHTML="<h1>"+nd+"</h1>";
+        }
+
+          // Tương tác thông qua css selector
+          var getByCssSelector1 = ()=>{
+            // lấy giá trị
+            let nd = document.querySelectorAll("input[name='noiDung']")[0].value;
+
+            // Hiển thị nội dung lên phần tử html thông qua css selector
+
+            document.querySelectorAll(".result div.css-selector")[0].innerHTML="<h1>"+nd+"</h1>";
+            document.querySelectorAll("#res div.css-selector")[1].innerHTML="<h1>"+nd+"</h1>";
+        }
+
+
+    </script>
+
+</body>
+</html>

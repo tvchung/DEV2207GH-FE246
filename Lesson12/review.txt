@@ -1,0 +1,64 @@
+review:
+- Ngôn ngữ javascript => nhúng vào trang html
+    + thuộc tính của sự kiện trên thể html 
+    + tag script
+    + external file js 
+- Hàm hệ thống (trình duyệt)
+    + alert
+    + confirm
+    + prompt
+- output (test):
+    + document.write
+    + alert 
+    + console
+- Khái niệm: 
+    + Biến: var; let
+    + Hằng: const
+    + Kiểu dữ liệu: number, string, object, array,...
+    + Toán tử: 
+        -> Số học
+        -> Nhị phân
+        -> Logic
+        -> Gán
+        -> So sánh
+        -> Lượng giá
+        -> TypeOf
+    + Biểu thức: 
+    + Câu lệnh
+    + Khối lệnh 
+- Cấu trúc điều khiển: (3 loại)
+    + Lựa chọn / Rẽ nhánh
+        *) if
+
+        *) switch
+
+    + Lặp:
+        *) for
+
+        *) while 
+
+        *) do....while 
+
+        *) for...in / forEach
+
+    + Lệnh nhảy
+        break; continue; return; 
+- Mảng
+    + Array; []
+    + Truy/xuất
+    + Duyệt mảng 
+    + Thao tác với mảng:
+    + Method
+- Hàm
+    + Hàm trả về giá trị xác định (return)
+    + Hàm trả về giá trị không xác định 
+    + Hàm có tham số 
+    + Hàm có tham số mặc định 
+    + Hàm có tham số biến đổi 
+- Chuỗi:
+    + ""; String 
+    + Method 
+
+--  Thực hành: Labguide05.01
+-- 8. JS - Giới thiệu Javascript.pdf
+-- 9. JS - Cấu trúc mệnh đề đk - vòng lặp - mảng và hàm.pdf

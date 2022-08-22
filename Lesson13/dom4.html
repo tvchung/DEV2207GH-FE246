@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hiện phép tính</title>
+    <style>
+        .number {
+            margin: .5rem;
+        }
+        div label{
+            width: 100px;
+            display: inline-block;
+        }
+        input[type="button"]{
+            margin: .25rem 0;
+            padding: .25rem .5rem;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thực hiện phép tính</h1>
+    <hr/>
+    <div class="number">
+        <Label for="num1">Number 1</Label>
+        <input type="text" name="num1" id="num1">
+    </div>
+    <div class="number">
+        <Label for="num2">Number 2</Label>
+        <input type="text" name="num2" id="num2">
+    </div>
+    <div class="number">
+        <Label for=""></Label>
+        <input type="button" name="btn" id="btn" value="*" onclick="tinhToan(this.value)">
+        <input type="button" name="btn" id="btn" value="/" onclick="tinhToan(this.value)">
+        <input type="button" name="btn" id="btn" value="+" onclick="tinhToan(this.value)">
+        <input type="button" name="btn" id="btn" value="-" onclick="tinhToan(this.value)">
+        <input type="button" name="btn" id="btn" value="%" onclick="tinhToan(this.value)">
+    </div>
+    <div class="result">
+        <h2>Kết quả:</h2>
+    </div>
+
+    <script>
+        // 10'
+        var tinhToan=(pt)=>{
+            // lấy giá trị
+            let n1 = parseFloat(num1.value);
+            let n2 = parseFloat(num2.value);
+            let kq = eval(n1 + pt + n2);
+            document.getElementsByTagName("h2")[0].innerHTML = "<h2>Kết quả:"+ kq;
+            /*
+            switch(pt){
+                case "*":
+                    kq = n1*n2;
+                    break;
+                case "/":
+                    kq = n1/n2;
+                    break;
+                case "+":
+                    kq = n1+n2;
+                    break;
+                case "-":
+                    kq = n1-n2;
+                    break;
+                case "%":
+                    kq = n1%n2;
+                    break;
+            }
+            
+            document.getElementsByTagName("h2")[0].innerHTML = "<h2>Kết quả:"+ kq;
+                */
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <style>
+        #album{
+            margin:1rem 10%;
+            border:1px solid #ccc;
+        }
+        .img-big {
+            margin: .5rem;
+        }
+        .img-big img{
+            width: 100%;
+        }
+        .img-small{
+            display: flex;
+            justify-content: space-between;
+            overflow-x: scroll;
+        }
+        .img-small img{
+            height: 50px;
+            margin: .25rem;
+        }
+    </style>
+</head>
+<body>
+    <section id="album">
+        <div class="img-big">
+            <img src="images/img1.jfif" alt="img1">
+        </div>
+        <div class="img-small">
+            <img src="images/img1.jfif" alt="img1">
+            <img src="images/img2.jfif" alt="img2">
+            <img src="images/img3.jfif" alt="img3">
+            <img src="images/img4.jpg" alt="img4">
+            <img src="images/img5.jfif" alt="img5">
+        </div>
+    </section>
+    <!-- nhúng Jquery vào trang html từ googleapi, cdn,...  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.img-small img').click(function(){
+                // lấy nguồn ảnh khi click
+                let img = $(this).attr("src");
+
+                // gán cho img lớn
+                $('.img-big img').attr("src",img);
+
+
+                // về hoàn thiện lab07
+                //=> bootstrap
+            });
+        });
+    </script>
+</body>
+</html>

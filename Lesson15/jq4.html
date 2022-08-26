@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery selecters</title>
+</head>
+<body>
+    <h1>Jquery effect</h1>
+    <hr>
+    <section id="zone1">
+        <div class="btn">
+            <button>fadeIn</button>
+            <button>fadeOut</button>
+            <button>fadeToggle</button>
+            <button>fadeTo</button>
+            <button>animate</button>
+            
+        </div>
+        <div class="img">
+            <img src="images/img1.jfif" alt="img1">
+        </div>
+    </section>
+    <!-- nhúng Jquery vào trang html từ googleapi, cdn,...  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- sử dụng cú pháp jquery -->
+    <script>
+        $(document).ready(function(){
+            $(".btn button").click(function(){
+                let txt = $(this).text();
+                if(txt=="fadeIn"){
+                    $(".img img").fadeIn(1000);
+                }
+                if(txt=="fadeOut"){
+                    $(".img img").fadeOut(2000);
+                }
+                if(txt=="fadeToggle"){
+                    $(".img img").fadeToggle(5000);
+                }
+                if(txt=="fadeTo"){
+                    $(".img img")
+                        .fadeTo(2000,0.5)
+                        .fadeTo(2000,1);
+                }
+                if(txt=="animate"){
+                    $(".img img").animate(
+                        {
+                            height: "300px",
+                            width:"200px"
+                        },
+                        2000
+                    );
+                }
+            });
+        });
+    </script>
+
+</body>
+</html

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Demo 1</title>
+</head>
+<body>
+    <h1>Jquery Demo 1</h1>
+    <hr>
+    <pre>
+        Download Jquery từ trong chủ Jquery.com 
+    </pre>
+
+    <!-- nhúng Jquery vào trang html từ googleapi, cdn,...  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- sử dụng cú pháp jquery -->
+    <script>
+        $(document).ready(function(){
+            $('h1').click(function(){
+                alert($('h1').text());
+                console.log($(this).text());
+            });
+        });
+    </script>
+
+</body>
+</html

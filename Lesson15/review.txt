@@ -1,0 +1,39 @@
+-- DOM in javascript
+HTML
+    Body
+        Tag Element
+            attribute
+
+- document.getElementById("giá trị của thuộc tính id")  
+            .value
+            .innerText
+            .innerHTML
+            .style
+            .....
+    => [giá trị thuộc tính id]
+            .value
+            .innerHTML
+            .innerText
+            ....
+- document.getElementsByTagName("TagName")
+- document.getElementsByClassName("giá trị của thuộc tính class")
+- document.querySelectorAll("css selector")
+
+--------------------------------
+Object
+    thuộc tính 
+    hành động (method)
+
+Regular Expression
+    [abc]
+    [a-z]
+    (x|y)
+    \s 
+    \d 
+    x+
+    x*
+    x?
+
+
+Number 
+date

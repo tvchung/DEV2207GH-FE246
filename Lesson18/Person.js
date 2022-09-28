@@ -2,9 +2,9 @@
 
 class Person{
     // phương thức khởi tạo
-    constructor(){
-        this.name='Devmaster',
-        this.age=5
+    constructor(name,age){
+        this.name=name,
+        this.age=age
     }
 
     // getter / setter
@@ -28,7 +28,8 @@ person.printInfor();
 person.setName("Chung Trịnh");
 person.setAge(45);
 person.printInfor();
-
+var person = new Person("Chung",10);
+person.printInfor();
 
 // Lớp kế thừa
 class Student extends Person{

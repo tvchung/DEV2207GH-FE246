@@ -1,0 +1,6 @@
+- tạo ứng dụng reactjs (thuchanh)
+- sử dụng biểu thức jsx
+- sử dụng function component
+- sử dụng class component
+- arrow function 
+
